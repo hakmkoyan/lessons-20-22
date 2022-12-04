@@ -1,4 +1,4 @@
-name: exampe`
+name: example1
 on:
   push:
 jobs:
@@ -9,5 +9,4 @@ jobs:
     - name: Checkout-files
       uses: actions/checkout@v3
     - name: read-file.txt
-      run: |
-        cat README.md    
+      shell: cat read-file.txt
